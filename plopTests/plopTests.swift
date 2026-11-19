@@ -1,0 +1,19 @@
+//
+//  plopTests.swift
+//  plopTests
+//
+//  Created by Purinutt Amartayavis on 19/11/2569 BE.
+//
+
+import Testing
+@testable import plop
+
+struct plopTests {
+
+    @Test func example() async throws {
+        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+        // Swift Testing Documentation
+        // https://developer.apple.com/documentation/testing
+    }
+
+}
