@@ -1,14 +1,14 @@
 //
-//  plopTests.swift
-//  plopTests
+//  PlopTests.swift
+//  PlopTests
 //
 //  Created by Purinutt Amartayavis on 19/11/2569 BE.
 //
 
 import Testing
-@testable import plop
+@testable import Plop
 
-struct plopTests {
+struct PlopTests {
 
     @Test func example() async throws {
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.

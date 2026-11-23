@@ -24,38 +24,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		924353BC30AF584300FF5D2F /* plop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		924353CD30AF584500FF5D2F /* plopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		924353D730AF584500FF5D2F /* plopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		924353BC30AF584300FF5D2F /* Plop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		924353CD30AF584500FF5D2F /* PlopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		924353D730AF584500FF5D2F /* PlopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		924353DF30AF584500FF5D2F /* Exceptions for "plop" folder in "plop" target */ = {
+		924353DF30AF584500FF5D2F /* Exceptions for "Plop" folder in "Plop" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 924353BB30AF584300FF5D2F /* plop */;
+			target = 924353BB30AF584300FF5D2F /* Plop */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		924353BE30AF584300FF5D2F /* plop */ = {
+		924353BE30AF584300FF5D2F /* Plop */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				924353DF30AF584500FF5D2F /* Exceptions for "plop" folder in "plop" target */,
+				924353DF30AF584500FF5D2F /* Exceptions for "Plop" folder in "Plop" target */,
 			);
-			path = plop;
+			path = Plop;
 			sourceTree = "<group>";
 		};
-		924353D030AF584500FF5D2F /* plopTests */ = {
+		924353D030AF584500FF5D2F /* PlopTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = plopTests;
+			path = PlopTests;
 			sourceTree = "<group>";
 		};
-		924353DA30AF584500FF5D2F /* plopUITests */ = {
+		924353DA30AF584500FF5D2F /* PlopUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = plopUITests;
+			path = PlopUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -88,9 +88,9 @@
 		924353B330AF584300FF5D2F = {
 			isa = PBXGroup;
 			children = (
-				924353BE30AF584300FF5D2F /* plop */,
-				924353D030AF584500FF5D2F /* plopTests */,
-				924353DA30AF584500FF5D2F /* plopUITests */,
+				924353BE30AF584300FF5D2F /* Plop */,
+				924353D030AF584500FF5D2F /* PlopTests */,
+				924353DA30AF584500FF5D2F /* PlopUITests */,
 				924353BD30AF584300FF5D2F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,9 +98,9 @@
 		924353BD30AF584300FF5D2F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				924353BC30AF584300FF5D2F /* plop.app */,
-				924353CD30AF584500FF5D2F /* plopTests.xctest */,
-				924353D730AF584500FF5D2F /* plopUITests.xctest */,
+				924353BC30AF584300FF5D2F /* Plop.app */,
+				924353CD30AF584500FF5D2F /* PlopTests.xctest */,
+				924353D730AF584500FF5D2F /* PlopUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,9 +108,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		924353BB30AF584300FF5D2F /* plop */ = {
+		924353BB30AF584300FF5D2F /* Plop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 924353E030AF584500FF5D2F /* Build configuration list for PBXNativeTarget "plop" */;
+			buildConfigurationList = 924353E030AF584500FF5D2F /* Build configuration list for PBXNativeTarget "Plop" */;
 			buildPhases = (
 				924353B830AF584300FF5D2F /* Sources */,
 				924353B930AF584300FF5D2F /* Frameworks */,
@@ -121,18 +121,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				924353BE30AF584300FF5D2F /* plop */,
+				924353BE30AF584300FF5D2F /* Plop */,
 			);
-			name = plop;
+			name = Plop;
 			packageProductDependencies = (
 			);
 			productName = plop;
-			productReference = 924353BC30AF584300FF5D2F /* plop.app */;
+			productReference = 924353BC30AF584300FF5D2F /* Plop.app */;
 			productType = "com.apple.product-type.application";
 		};
-		924353CC30AF584500FF5D2F /* plopTests */ = {
+		924353CC30AF584500FF5D2F /* PlopTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 924353E530AF584500FF5D2F /* Build configuration list for PBXNativeTarget "plopTests" */;
+			buildConfigurationList = 924353E530AF584500FF5D2F /* Build configuration list for PBXNativeTarget "PlopTests" */;
 			buildPhases = (
 				924353C930AF584500FF5D2F /* Sources */,
 				924353CA30AF584500FF5D2F /* Frameworks */,
@@ -144,18 +144,18 @@
 				924353CF30AF584500FF5D2F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				924353D030AF584500FF5D2F /* plopTests */,
+				924353D030AF584500FF5D2F /* PlopTests */,
 			);
-			name = plopTests;
+			name = PlopTests;
 			packageProductDependencies = (
 			);
 			productName = plopTests;
-			productReference = 924353CD30AF584500FF5D2F /* plopTests.xctest */;
+			productReference = 924353CD30AF584500FF5D2F /* PlopTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		924353D630AF584500FF5D2F /* plopUITests */ = {
+		924353D630AF584500FF5D2F /* PlopUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 924353E830AF584500FF5D2F /* Build configuration list for PBXNativeTarget "plopUITests" */;
+			buildConfigurationList = 924353E830AF584500FF5D2F /* Build configuration list for PBXNativeTarget "PlopUITests" */;
 			buildPhases = (
 				924353D330AF584500FF5D2F /* Sources */,
 				924353D430AF584500FF5D2F /* Frameworks */,
@@ -167,13 +167,13 @@
 				924353D930AF584500FF5D2F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				924353DA30AF584500FF5D2F /* plopUITests */,
+				924353DA30AF584500FF5D2F /* PlopUITests */,
 			);
-			name = plopUITests;
+			name = PlopUITests;
 			packageProductDependencies = (
 			);
 			productName = plopUITests;
-			productReference = 924353D730AF584500FF5D2F /* plopUITests.xctest */;
+			productReference = 924353D730AF584500FF5D2F /* PlopUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 924353B730AF584300FF5D2F /* Build configuration list for PBXProject "plop" */;
+			buildConfigurationList = 924353B730AF584300FF5D2F /* Build configuration list for PBXProject "Plop" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -213,9 +213,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				924353BB30AF584300FF5D2F /* plop */,
-				924353CC30AF584500FF5D2F /* plopTests */,
-				924353D630AF584500FF5D2F /* plopUITests */,
+				924353BB30AF584300FF5D2F /* Plop */,
+				924353CC30AF584500FF5D2F /* PlopTests */,
+				924353D630AF584500FF5D2F /* PlopUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,12 +271,12 @@
 /* Begin PBXTargetDependency section */
 		924353CF30AF584500FF5D2F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 924353BB30AF584300FF5D2F /* plop */;
+			target = 924353BB30AF584300FF5D2F /* Plop */;
 			targetProxy = 924353CE30AF584500FF5D2F /* PBXContainerItemProxy */;
 		};
 		924353D930AF584500FF5D2F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 924353BB30AF584300FF5D2F /* plop */;
+			target = 924353BB30AF584300FF5D2F /* Plop */;
 			targetProxy = 924353D830AF584500FF5D2F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -484,7 +484,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/plop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/plop";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Plop";
 			};
 			name = Debug;
 		};
@@ -505,7 +505,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/plop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/plop";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Plop";
 			};
 			name = Release;
 		};
@@ -550,7 +550,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		924353B730AF584300FF5D2F /* Build configuration list for PBXProject "plop" */ = {
+		924353B730AF584300FF5D2F /* Build configuration list for PBXProject "Plop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				924353E330AF584500FF5D2F /* Debug */,
@@ -559,7 +559,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		924353E030AF584500FF5D2F /* Build configuration list for PBXNativeTarget "plop" */ = {
+		924353E030AF584500FF5D2F /* Build configuration list for PBXNativeTarget "Plop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				924353E130AF584500FF5D2F /* Debug */,
@@ -568,7 +568,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		924353E530AF584500FF5D2F /* Build configuration list for PBXNativeTarget "plopTests" */ = {
+		924353E530AF584500FF5D2F /* Build configuration list for PBXNativeTarget "PlopTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				924353E630AF584500FF5D2F /* Debug */,
@@ -577,7 +577,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		924353E830AF584500FF5D2F /* Build configuration list for PBXNativeTarget "plopUITests" */ = {
+		924353E830AF584500FF5D2F /* Build configuration list for PBXNativeTarget "PlopUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				924353E930AF584500FF5D2F /* Debug */,
