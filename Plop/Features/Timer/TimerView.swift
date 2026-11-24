@@ -31,7 +31,7 @@ struct TimerView: View {
                     .animation(.easeInOut(duration: 0.4), value: progress)
                 VStack (spacing: Theme.Spacing.group) {
                     Text(viewModel.clock).textStyle(.timerClock)
-                    Text("Started 9:59 PM")
+                    Text("Started at \(viewModel.startedAt)")
                 }
             }
             .frame(width: Theme.Size.timerRing)
@@ -78,8 +78,9 @@ struct TimerView: View {
 
 #Preview {
     let timer = TimerService()
+    timer.start()
     
-    NavigationStack {
+    return NavigationStack {
             TimerView(service: timer, router: AppRouter(timer: timer))
     }
 }

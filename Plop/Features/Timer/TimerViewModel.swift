@@ -26,6 +26,7 @@ final class TimerViewModel {
     }
     
     private(set) var clock = "0:00"
+    private(set) var startedAt = Date.now.formatted(Date.FormatStyle().hour().minute())
     
     var pauseButtonText: String {
         if service.isPaused {
