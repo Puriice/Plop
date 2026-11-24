@@ -38,6 +38,10 @@ struct RootTabView: View {
                     .containerBackground(Theme.Colors.background, for: .navigation)
             }
         }
+        .task {
+            guard timer.isRunning else { return }
+            router.isTimerPresented = true
+        }
         .environment(router)
     }
 
