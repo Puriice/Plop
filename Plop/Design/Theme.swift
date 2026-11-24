@@ -22,33 +22,42 @@ import UIKit
 enum Theme {
     
     // MARK: Colors
+    // Defined in Assets.xcassets/Colors with light & dark variants (generated ColorResource symbols).
     enum Colors {
         // Neutrals
-        static let background    = Color(hex: 0xFBFAF7)   // screen background
-        static let surface       = Color(hex: 0xFFFFFF)   // cards, tab bar, inputs, selected segment
-        static let surfaceMuted  = Color(hex: 0xEFECE6)   // settings button, segmented track
-        static let border        = Color(hex: 0xECE8E1)   // card borders, row dividers, tab bar top
-        static let borderStrong  = Color(hex: 0xDDD7CE)   // unselected chips, text field border
-        static let textPrimary   = Color(hex: 0x1F1A17)   // main text, text on mint & yellow
-        static let textSecondary = Color(hex: 0x6B6560)   // labels, meta, inactive tabs, Skip
+        static let background    = Color(.background)     // screen background
+        static let surface       = Color(.surface)        // cards, tab bar, inputs, selected segment
+        static let surfaceMuted  = Color(.surfaceMuted)   // settings button, segmented track
+        static let border        = Color(.border)         // card borders, row dividers, tab bar top
+        static let borderStrong  = Color(.borderStrong)   // unselected chips, text field border
+        static let textPrimary   = Color(.textPrimary)    // main text, text on mint & yellow
+        static let textSecondary = Color(.textSecondary)  // labels, meta, inactive tabs, Skip
+        static let textOnAccent  = Color(.textOnAccent)   // text on mint & yellow fills (dark in both modes)
+        static let segmentSelected = Color(.segmentSelected) // selected segment thumb
         
         // Brand – mint (always dark text on it, never white)
-        static let mint          = Color(hex: 0xA0E1C3)   // hero card, Timer background, Save button
-        static let mintDeep      = Color(hex: 0x1F6F55)   // links, active tab, selected chip, ring, selected bar, badge text
-        static let mintPressed   = Color(hex: 0x17533F)   // pressed links
-        static let mintSoft      = Color(hex: 0xDDF4E8)   // selected chip fill, type badge
-        static let mintBar       = Color(hex: 0xC4EBD8)   // unselected chart bars
+        static let mint          = Color(.brandMint)      // Save button
+        static let heroBackground  = Color(.heroBackground)  // Home hero card
+        static let timerBackground = Color(.timerBackground) // Timer screen background
+        static let mintDeep      = Color(.mintDeep)       // links, active tab, selected chip, ring, selected bar, badge text
+        static let mintPressed   = Color(.mintPressed)    // pressed links
+        static let mintSoft      = Color(.mintSoft)       // selected chip fill, type badge
+        static let mintBar       = Color(.mintBar)        // unselected chart bars
         
         // Highlight – yellow crown
-        static let highlight     = Color(hex: 0xFDE68A)   // Start, Done
-        static let highlightSoft = Color(hex: 0xFEF3C7)   // insight card
-        static let highlightText = Color(hex: 0x78350F)   // insight card text
-        static let highlightIcon = Color(hex: 0x92400E)   // insight card lightbulb
-        
+        static let highlight     = Color(.highlight)      // Start, Done
+        static let highlightSoft = Color(.highlightSoft)  // insight card
+        static let highlightText = Color(.highlightText)  // insight card text
+        static let highlightIcon = Color(.highlightIcon)  // insight card lightbulb
+
+        // Danger – red
+        static let dangerSoft    = Color(.dangerSoft)     // type badge fill for types 1 & 7
+        static let dangerText    = Color(.dangerText)     // type badge text for types 1 & 7
+
         // On-mint translucency
-        static let onMint        = Color.white.opacity(0.55)  // ✕ button, hint pill
-        static let haloInner     = Color.white.opacity(0.45)  // Start button ring 1
-        static let haloOuter     = Color.white.opacity(0.22)  // Start button ring 2
+        static let onMint        = Color(.onMint)         // ✕ button, hint pill
+        static let haloInner     = Color(.haloInner)      // Start button ring 1
+        static let haloOuter     = Color(.haloOuter)      // Start button ring 2
         static let ringTrack     = mintDeep.opacity(0.15)     // timer ring track
         
         // Misc
@@ -153,18 +162,6 @@ enum Theme {
         static let chartHeight: CGFloat   = 150
         static let noteHeight: CGFloat    = 76
         static let tabBarHeight: CGFloat  = 84
-    }
-}
-
-// MARK: - Hex helper
-
-extension Color {
-    init(hex: UInt32, opacity: Double = 1) {
-        self.init(.sRGB,
-                  red:   Double((hex >> 16) & 0xFF) / 255,
-                  green: Double((hex >> 8)  & 0xFF) / 255,
-                  blue:  Double( hex        & 0xFF) / 255,
-                  opacity: opacity)
     }
 }
 

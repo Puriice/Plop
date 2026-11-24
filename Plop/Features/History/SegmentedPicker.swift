@@ -27,7 +27,7 @@ struct SegmentedPicker<T: Hashable>: View {
                         .background {
                             if isOn {
                                 RoundedRectangle(cornerRadius: Theme.Radius.segment, style: .continuous)
-                                    .fill(Theme.Colors.surface)
+                                    .fill(Theme.Colors.segmentSelected)
                                     .shadow(color: .black.opacity(0.08), radius: 3, y: 1)
                                     .matchedGeometryEffect(id: "thumb", in: ns)
                             }

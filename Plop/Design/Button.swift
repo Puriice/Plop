@@ -20,7 +20,7 @@ struct PlopButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(kind == .outline ? Theme.Fonts.buttonOutline : Theme.Fonts.button)
-            .foregroundStyle(Theme.Colors.textPrimary)          // dark text on every fill, never white
+            .foregroundStyle(kind == .outline ? Theme.Colors.textPrimary : Theme.Colors.textOnAccent) // dark text on every fill, never white
             .labelStyle(.titleAndIcon)
             .frame(maxWidth: .infinity, minHeight: Theme.Size.buttonHeight)
             .background(fill, in: Capsule())

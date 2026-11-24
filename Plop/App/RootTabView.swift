@@ -43,10 +43,19 @@ struct RootTabView: View {
 
 }
 
-#Preview {
+#Preview("Light Mode") {
     let timer = TimerService()
     RootTabView(timer: timer)
         .environment(timer)
         .environment(TimerService())
         .modelContainer(for: Session.self, inMemory: true)
+}
+
+#Preview("Dark Mode") {
+    let timer = TimerService()
+    RootTabView(timer: timer)
+        .environment(timer)
+        .environment(TimerService())
+        .modelContainer(for: Session.self, inMemory: true)
+        .preferredColorScheme(.dark)
 }

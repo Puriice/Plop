@@ -56,7 +56,7 @@ struct HomeView: View {
                                 }
                             }
                         }
-                        .tint(Theme.Colors.textPrimary)
+                        .tint(Theme.Colors.textOnAccent)
                     }
                     Text("Tap to start the clock").textStyle(.rowMeta)
                 }
@@ -64,7 +64,7 @@ struct HomeView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .aspectRatio(1, contentMode: .fit)
                 .layoutPriority(1)
-                .background(Theme.Colors.mint)
+                .background(Theme.Colors.heroBackground)
                 .clipShape(.rect(cornerRadius: Theme.Radius.card))
                 .overlay(
                     RoundedRectangle(cornerRadius: Theme.Radius.card)

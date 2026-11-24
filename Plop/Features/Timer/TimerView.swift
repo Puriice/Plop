@@ -57,7 +57,7 @@ struct TimerView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Theme.Colors.mint)
+        .background(Theme.Colors.timerBackground)
         .onReceive(viewModel.timer) { _ in
             viewModel.tick()
         }
