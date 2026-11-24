@@ -25,15 +25,9 @@ final class HomeViewModel {
         guard !sessions.isEmpty else { return "0:00" }
 
         let total = sessions.reduce(0) { $0 + $1.endedAt.timeIntervalSince($1.startedAt) }
-        let average = Int((total / Double(sessions.count)).rounded())
-
-        let hours = average / 3600
-        let minutes = (average % 3600) / 60
-        let seconds = average % 60
-
-        if hours > 0 {
-            return String(format: "%d:%02d:%02d", hours, minutes, seconds)
-        }
-        return String(format: "%d:%02d", minutes, seconds)
+        return Duration.seconds(total).formatted(.units(
+            allowed: [.hours, .minutes, .seconds],
+            width: .narrow
+        ))
     }
 }
