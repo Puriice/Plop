@@ -30,7 +30,9 @@ struct SessionCard: View {
                     .textStyle(.rowTitle)
                 Text("\(session.feel) • \(session.bristolType.Description())")
                     .textStyle(.rowMeta)
+                    .multilineTextAlignment(.leading)
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
             Spacer()
             Text(Duration.seconds(session.duration).formatted(.units(
                 allowed: [.hours, .minutes, .seconds],
@@ -60,5 +62,4 @@ struct SessionCard: View {
         RoundedRectangle(cornerRadius: Theme.Radius.card)
             .stroke(Theme.Colors.border, lineWidth: 2)
     )
-    .padding()
 }
