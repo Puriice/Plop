@@ -34,21 +34,24 @@ enum Bristol: Int, Codable, CaseIterable, Identifiable {
     
     func Background() -> Color {
         return switch self {
-        case .SausageWithCracks, .SmoothAndSoft:
+        case .SausageWithCracks,.SmoothAndSoft, .SoftBlobs:
             Theme.Colors.mintSoft
-        case .LumpySausage, .SoftBlobs, .Mushy:
+        case .LumpySausage,  .Mushy:
             Theme.Colors.highlightSoft
         case .SeparateHardLumps, .Watery:
-            Theme.Colors.highlight
+            Theme.Colors.dangerSoft
         }
     }
     
     func Foreground() -> Color {
         return switch self {
-        case .SausageWithCracks, .SmoothAndSoft:
+        case .SausageWithCracks, .SmoothAndSoft, .SoftBlobs:
             Theme.Colors.mintDeep
-        case .LumpySausage, .SoftBlobs, .Mushy, .SeparateHardLumps, .Watery:
+        case .LumpySausage, .Mushy:
             Theme.Colors.highlightText
+        case .SeparateHardLumps, .Watery:
+            Theme.Colors.dangerText
         }
+        
     }
 }
