@@ -13,7 +13,7 @@ final class Session: Hashable {
     var startedAt: Date
     var endedAt: Date
     var pauseDuration: TimeInterval = 0
-    var feel: Feel = Feel.Okay
+    var feel: Feel = Feel.Easy
     var bristolType: Bristol = Bristol.SmoothAndSoft
     var note: String
     var draft: Bool
@@ -24,7 +24,7 @@ final class Session: Hashable {
         return max(0, total)
     }
 
-    init(startedAt: Date, endedAt: Date, pauseDuration: TimeInterval = 0, feel: Feel = Feel.Okay, bristolType: Bristol = Bristol.SmoothAndSoft, note: String? = nil, draft: Bool = false) {
+    init(startedAt: Date, endedAt: Date, pauseDuration: TimeInterval = 0, feel: Feel = Feel.Easy, bristolType: Bristol = Bristol.SmoothAndSoft, note: String? = nil, draft: Bool = false) {
         self.startedAt = startedAt
         self.endedAt = endedAt
         self.pauseDuration = pauseDuration

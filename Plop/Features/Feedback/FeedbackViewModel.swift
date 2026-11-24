@@ -13,8 +13,15 @@ final class FeedbackViewModel {
     
     private var session: Session
     
+    var draft: Bool {
+        session.draft 
+    }
+    
     var duration: String {
-        Duration.seconds(session.duration).formatted(.time(pattern: .minuteSecond))
+        Duration.seconds(session.duration).formatted(.units(
+            allowed: [.hours, .minutes, .seconds],
+            width: .narrow
+        ))
     }
     
     var timeline: String {
