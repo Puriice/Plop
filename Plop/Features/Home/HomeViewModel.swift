@@ -24,8 +24,8 @@ final class HomeViewModel {
     func averageSession(_ sessions: [Session]) -> String {
         guard !sessions.isEmpty else { return "0:00" }
 
-        let total = sessions.reduce(0) { $0 + $1.endedAt.timeIntervalSince($1.startedAt) }
-        return Duration.seconds(total).formatted(.units(
+        let average = sessions.reduce(0) { $0 + $1.endedAt.timeIntervalSince($1.startedAt) } / Double(sessions.count)
+        return Duration.seconds(average).formatted(.units(
             allowed: [.hours, .minutes, .seconds],
             width: .narrow
         ))
