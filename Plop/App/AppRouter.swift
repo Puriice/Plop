@@ -7,7 +7,7 @@
 import Observation
 
 enum AppTab: Hashable {
-    case home, history, stats
+    case home, calendar, history, stats
 }
 
 @Observable
@@ -42,5 +42,13 @@ final class AppRouter {
     func timerDismiss() {
         draft = nil
         timer.reset()
+    }
+    
+    func openSetting() {
+        isSettingsPresented = true
+    }
+    
+    func closeSetting() {
+        isSettingsPresented = false
     }
 }

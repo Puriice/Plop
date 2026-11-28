@@ -122,6 +122,13 @@ struct HomeView: View {
                     }
                 }
                 .sharedBackgroundVisibility(.hidden)
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        router.openSetting()
+                    } label: {
+                        Image(systemName: "gear")
+                    }
+                }
             }
             .padding(Theme.Spacing.screenH)
             .containerBackground(Theme.Colors.background, for: .navigation)
