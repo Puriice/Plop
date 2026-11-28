@@ -7,10 +7,12 @@
 
 struct Tabs {
     static let homeString = "Timer"
+    static let calendarString = "Calendar"
     static let historyString = "History"
     static let statsString = "Stats"
     
     static let homeIcon = "clock.arrow.trianglehead.counterclockwise.rotate.90"
+    static let calendarIcon = "calendar"
     static let historyIcon = "list.bullet"
     static let statsIcon = "chart.bar.xaxis"
 }
