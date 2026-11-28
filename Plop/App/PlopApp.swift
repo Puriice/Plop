@@ -10,7 +10,15 @@ import SwiftData
 
 @main
 struct PlopApp: App {
-    @State private var timer = TimerService()
+    @State private var settings: SettingService
+    @State private var timer: TimerService
+    
+    init() {
+        let settings = SettingService()
+        
+        self.settings = settings
+        timer = TimerService(settings: settings)
+    }
 
     var body: some Scene {
         WindowGroup {
@@ -18,6 +26,7 @@ struct PlopApp: App {
                 Theme.Colors.background.ignoresSafeArea()
                 RootTabView(timer: timer)
                     .environment(timer)
+                    .environment(settings)
                     .tint(Color.purple)
                     .fontDesign(.rounded)
             }

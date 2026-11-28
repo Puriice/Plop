@@ -11,6 +11,7 @@ import SwiftData
 struct RootTabView: View {
     @State private var router: AppRouter
     @Environment(TimerService.self) private var timer
+    @Environment(SettingService.self) private var settings
     
     init(timer: TimerService) {
         self.router = AppRouter(timer: timer)
@@ -25,13 +26,21 @@ struct RootTabView: View {
                  Label(Tabs.homeString, systemImage: Tabs.homeIcon)
             }
             .tag(AppTab.home)
+            CalendarView().tabItem {
+                Label(Tabs.calendarString, systemImage: Tabs.calendarIcon)
+            }.tag(AppTab.calendar)
             HistoryView().tabItem {
                 Label(Tabs.historyString, systemImage: Tabs.historyIcon)
             }.tag(AppTab.history)
         }
+        .fullScreenCover(isPresented: $router.isSettingsPresented) {
+            NavigationStack {
+                SettingView(service: settings)
+            }
+        }
         .fullScreenCover(isPresented: $router.isTimerPresented, onDismiss: router.timerDismiss) {
             NavigationStack {
-                TimerView(service: timer, router: router)
+                TimerView(timer: timer, router: router)
                     .navigationDestination(item: $router.draft) { draft in
                         FeedbackView(session: draft)
                     }
@@ -47,19 +56,11 @@ struct RootTabView: View {
 
 }
 
-#Preview("Light Mode") {
+#Preview {
     let timer = TimerService()
     RootTabView(timer: timer)
         .environment(timer)
-        .environment(TimerService())
-        .modelContainer(for: Session.self, inMemory: true)
+        .environment(SettingService())
+        .modelContainer(Session.previewContainer())
 }
 
-#Preview("Dark Mode") {
-    let timer = TimerService()
-    RootTabView(timer: timer)
-        .environment(timer)
-        .environment(TimerService())
-        .modelContainer(for: Session.self, inMemory: true)
-        .preferredColorScheme(.dark)
-}
